@@ -4,8 +4,6 @@
 
 ### Branchek:
 
-    -**elso**: Új gomb *(1. feladat)*
-
-    -**masodik**: Számláló *(2. feladat)*
-
-    -**harmadik**: TODO lista *(3. feladat)*
+-  **elso**: Új gomb _(1. feladat)_
+-  **masodik**: Számláló _(2. feladat)_
+-  **harmadik**: TODO lista _(3. feladat)_
