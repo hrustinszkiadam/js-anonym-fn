@@ -1,19 +1,12 @@
 const list = document.querySelector('#todo-list');
-
-const todoForm = document.querySelector('#todo-form');
 const userInput = document.getElementById('todo-field');
+const todoForm = document.querySelector('#todo-form');
+
 todoForm.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-	const todo = newTodo(userInput.value);
-	userInput.value = '';
-
-	list.appendChild(todo);
-});
-
-function newTodo(input) {
 	const todo = document.createElement('li');
-	todo.textContent = input;
+	todo.textContent = userInput.value;
 
 	const finishButton = document.createElement('button');
 	finishButton.textContent = 'Kész';
@@ -21,5 +14,7 @@ function newTodo(input) {
 	finishButton.addEventListener('click', () => todo.remove());
 
 	todo.appendChild(finishButton);
-	return todo;
-}
+	list.appendChild(todo);
+
+	userInput.value = '';
+});
