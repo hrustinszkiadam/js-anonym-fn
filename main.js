@@ -1,7 +1,6 @@
 const body = document.querySelector('body');
-const newBtn = document.querySelector('#new-btn');
 
-newBtn.addEventListener('click', counterButton);
+document.querySelector('#new-btn').addEventListener('click', counterButton);
 
 function counterButton() {
 	const btn = document.createElement('button');
